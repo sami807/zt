@@ -1,0 +1,76 @@
+html, body {height: 100%; margin: 0;}
+body{font-family: 'Poppins', sans-serif; color:#737373;}
+h1,h2,h3,h4,h5,h6{color:#212121;}
+
+.font-300{font-weight: 300;}
+.font-400{font-weight: 400;}
+.font-500{font-weight: 500;}
+.font-600{font-weight: 600;}
+.font-small{font-size: 90%;}
+.lspace-1{letter-spacing: 0.1rem;}
+.lspace-2{letter-spacing: 0.2rem;}
+.text-white{color:#fff;}
+.text-cyan{color:#73a4aa;}
+.text-red{color:#ff6058;}
+.btn-primary{background:#ff6058; color:#fff; border-radius: 3px; padding:15px 30px; text-decoration: none; text-transform: uppercase; font-size: 0.75rem; font-weight: 500; letter-spacing: 0.1rem; display: inline-block; transition: all 0.1s ease-in;}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active{background:#e63a32; color:#fff; outline: none; box-shadow: none !important; border:none;}
+.btn-close:focus{box-shadow: none;}
+.font-leading{font-size:calc(2rem + .9vw); font-weight: 600;}
+
+.bgc-purple{background:#8785a2;}
+.bgc-green{background:#7facb3;}
+.bgc-brown{background:#c4a078;}
+
+.mainMenu{list-style: none; margin:0px; padding:0px;}
+.mainMenu a{display: block; text-decoration: none; font-size: 1.5rem; padding:0.5rem 0rem; color:#222; border-bottom: 1px solid #eaeaea; transition: all 0.1s ease-in;}
+.mainMenu a:hover{color:#ff6058;}
+.offcanvas{padding:1rem;}
+
+.logoBrand{padding:1rem 0.5rem; padding-top:1.6rem;}
+.secHomeBan{background:url(../images/home-banner.jpg) no-repeat center center; background-size: cover; height:100%; display: flex; justify-content: center; align-items: center; color:#fff; min-height: 480px; margin-top:-106px;}
+.homeBanTxt{max-width: 680px; text-align: center; margin-top:50px;}
+.homeBanTxt h1{font-size:calc(2.5rem + .9vw); font-weight: 600;}
+
+.mainNav{display: flex; justify-content: space-between; align-items: center; position: relative; z-index: 1;}
+
+.secHomeAbout{padding:100px 0px; }
+.secHomeAbout .dpadding{padding-left:40px; padding-top:10px;}
+
+.secHomeChoose{padding:100px 0px 20px; background:#f7f7f7;}
+
+.container-expertise{display: flex; justify-content: space-between;}
+.cardExpertise{max-width: 30%; position:relative; border-radius: 3px; overflow: hidden;}
+.cardExpertise .caption{position: absolute; padding:10px 15px; bottom:30px; left:20px; right:20px; text-align: center; color:#fff; border-radius: 3px; font-weight: 500;}
+
+.chooseOptions{position: relative; padding-bottom:100px;}
+.chooseOptions .bg{height:50%; position: absolute; top:0px; left:0px; width:100%; background:#f7f7f7;}
+
+.secHomeSrv{padding-bottom: 70px;}
+
+.container-hsrv{display: flex; flex-wrap: wrap; justify-content: space-between;}
+.hsrvWrap{text-align: center; text-decoration: none; max-width: 30%; margin-bottom: 5%; background:#f9f9f9; display: block; padding:2.5rem;}
+.hsrvWrap p{color:#737373;}
+
+.secReviews{position:relative; background:url(../images/reviews-bg.jpg) no-repeat center center; padding:100px 0px; z-index: -2; background-size: cover;}
+.secReviews::after { content: ''; width: 65%; height: 100%;  background:rgba(0, 0, 0, 0.5); top:0; left:0; position: absolute; z-index: -1;}
+.carousel.slide{background:rgba(0, 0, 0, 0.6); padding:3rem; color:#fff;}
+.carousel-arrows{display: flex; position:absolute; bottom:30px; right:30px; font-size: 3rem;}
+.carousel-arrows button{position:static; width:24px;}
+.rvData{display: flex; align-items: center;} 
+.rvData .image{border-radius: 50%; width:100px; height:100px; overflow: hidden;}
+.rvData .txt{margin-left:1rem; line-height:normal;}
+.rvData .txt h4{margin:0px;}
+.rvData .txt p{margin:0px;}
+
+.foot-1{text-align: center; padding:2rem 0rem; line-height: normal;}
+.foot-2{text-align: center; background:#232323; color:#fff; padding:2rem 0rem; line-height: normal;}
+
+
+@media (max-width: 768px){
+    .homeBanTxt{padding:0rem 1rem;}
+    .secHomeAbout .dpadding{padding:0px;}
+    .hsrvWrap{max-width: 100%;}
+    .secReviews::after{width:100%;}
+    .cardExpertise{max-width: 100%; margin-bottom: 2rem;}
+    .container-expertise{display: block;}
+}
